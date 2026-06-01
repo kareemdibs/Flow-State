@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Inter", "SF Pro Display", -apple-system, sans-serif;
+}
+
+html,
+body {
+  background: #FAFAF7;
+  color: #0B0B10;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle dotted texture for "paper" feel */
+.bg-dots {
+  background-image: radial-gradient(rgba(11, 11, 16, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Safe area padding for bottom nav (mobile-style) */
+.pb-nav { padding-bottom: 104px; }
+
+/* Hide scrollbars on chip rows */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Gradient text */
+.text-gradient-flame {
+  background: linear-gradient(135deg, #FF5A1F 0%, #FF8A4C 50%, #FFD37A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
